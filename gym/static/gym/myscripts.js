@@ -1,3 +1,4 @@
+// filter options after click
 function filterSelection(category) {
     var elements = document.getElementsByClassName("filterDiv");
     if (category === "all") category = "";
@@ -41,12 +42,11 @@ function display_contact_info(num) {
 
 
 
-
+// display header links on click
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
