@@ -13,10 +13,12 @@ body {
 /* header styles */
 .section-head {
 	background: #80deea;
-	height: 6rem;
+	/* height: 6rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	color: #01739d;
+	box-shadow: 0px 0px 5px 1px #769599;
 }
 .section-title {
 	padding: 1rem 4rem;
@@ -42,23 +44,34 @@ body {
 }
 .input-form {
 	width: 30rem;
-	/* color: red; */
 	height: 45vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-.information-input {
+input {
 	border: 1px solid #ccc;
 	border-radius: 1rem;
-	padding: 12px 12px 12px 38px;
 	font-size: 16px;
 	direction: ltr;
 	outline: none;
+	padding: 12px 20px 12px 40px;
 	width: 60%;
+	background-position: 10px 10px; 
+	background-size: 25px 25px;
+  	background-repeat: no-repeat;
 }
-.information-input:focus {
+input:focus {
 	border: 1px solid #0097cf;
+}
+.name-input{
+	background-image: url('svg/userProfile.svg');
+}
+.email-input{
+	background-image: url('svg/sms.svg');
+}
+.password-input{
+	background-image: url('svg/key.svg');
 }
 .input-box {
 	width: 100%;
@@ -67,18 +80,11 @@ body {
 	align-items: center;
 	position: relative;
 }
-.input-box img{
-	position: absolute;
-	left: 10px;
-	width: 20px;
-	height: 20px;
-}
 .box form {
 	display: flex;
 	margin-top: 3rem;
 	flex-direction: column;
 	align-items: center;
-	/* justify-content: center; */
 	height: 100%;
 	width: 100%;
 }
@@ -112,17 +118,58 @@ form h2{
 }
 @media only screen and (max-width: 1100px) {
 	.box{
-	width: 50vw;
+	width: 50%;
+	padding: 1rem;
 	}
 	.input-form {
 		width: 45vw;
 	}
+	input{
+		width: 50%;
+	}
   }
 @media only screen and (max-width: 850px) {
 	.box{
-	width: 60vw;
+	width: 60%;
 	}
 	.input-form {
 		width: 50vw;
 	}
   }
+@media only screen and (max-width: 650px) {
+	.box{
+		width: 70vw;
+		height: 70vh;
+		margin: 3rem auto;
+	}
+	.input-form {
+		width: 65vw;
+		height: 80%;
+	}
+	.input-box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: start;
+	}
+	label{
+		font-size: 16px;
+	}
+	input{
+		width: 80%;
+		font-size: 14px;
+		direction: ltr;
+		padding: 10px 18px 10px 35px;
+		background-position: 8px 8px; 
+		background-size: 23px 23px;
+	}
+	form button {
+		font-size: 1rem;
+		padding: 5px;
+		margin-top: 1rem;
+	}
+	.errors{
+		font-size: 0.8rem;
+	}
+}

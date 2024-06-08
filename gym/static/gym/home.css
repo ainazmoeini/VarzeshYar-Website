@@ -22,6 +22,9 @@ header{
     color: #01739d;
     font-size: 1.3rem;
 }
+.mobile-header{
+    display: none;
+}
 .sticky {
     position: fixed;
     /* display: block; */
@@ -68,6 +71,7 @@ svg{
     z-index: -1;
 }
 .content{
+    /* width: 80rem; */
     width: 80vw;
     margin-top: 3rem;
     display: flex;
@@ -132,6 +136,7 @@ svg{
 hr{
     margin: 1rem 0;
 } 
+
 /* footer */
 footer{
     height: 8rem;
@@ -148,3 +153,152 @@ footer{
     border-top-right-radius: 10% 7%;
     border-top-left-radius: 10% 7%;
 }
+
+/* responsive styles */
+@media only screen and (max-width: 1250px) {
+    .content{
+        /* width: 90vw; */
+    }
+    .logo-design{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .gym-title img{
+        max-width: 25rem;
+        margin-left: 20px;
+        box-sizing: border-box;
+    }   
+    .logo-design{
+        margin-top: 2rem;
+    }
+    .gym-title h1{
+        font-size: 3rem;
+    }
+    header{
+        padding: 0rem 4rem;
+    }
+    .content{
+        width: 100%;
+        display: none;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .gym-title img{
+        max-width: 23rem;
+        margin-left: 20px;
+        box-sizing: border-box;
+    }   
+    .gym-title h1{
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .gym-title img{
+        max-width: 23rem;
+        
+    }   
+    .gym-title h1{
+        font-size: 2rem;
+    }
+    header{
+        padding: 0 2rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .gym-title img{
+        max-width: 25rem;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }   
+    .logo-design{
+        display: flex;
+        flex-direction: column;
+    }
+    header{
+        padding: 0 1rem;
+        font-size: 1.2rem;
+    }
+    .header_nav{
+        /* margin: 0 0; */
+    }
+}
+@media only screen and (max-width: 520px) {
+    .curved svg{
+        display: none;
+    }
+    .header_links{
+        display: none;
+    }
+    .mobile-header{
+        display: flex;
+        flex-direction: column;
+        background-color: #80DEEA;
+        width: 100%;
+        height: 5rem;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    header{
+        padding: 0;
+    }
+    .gym-title img{
+        max-width: 90%;
+        /* display: none; */
+    }
+    
+}
+
+
+
+
+
+.dropbtn {
+    background-color: #80DEEA;
+    color: #01739d;
+    /* padding: 16px; */
+    padding-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    /* font-size: 16px; */
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* .mobile-header p{ */
+    /* padding: 2px; */
+  /* }     */
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    /* border-top: 1px solid #0097CF; */
+
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #80DEEA;
+    width: 100%;
+    /* padding-left: 1rem; */
+    /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #01739d;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    /* border-top: 1px solid #0097CF; */
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}

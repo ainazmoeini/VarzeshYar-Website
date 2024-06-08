@@ -9,18 +9,22 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
 /* header styles */
 .section-head {
 	background: #80deea;
-	height: 6rem;
+	/* height: 6rem; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	color: #01739d;
+	box-shadow: 0px 0px 5px 1px #769599;
 }
 .section-title {
 	padding: 1rem 4rem;
 	cursor: default;
 }
+
 /* body styles */
 .menu {
 	background: #e1f5fe;
@@ -29,17 +33,17 @@ body {
 .box {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	background-color: #ffffff;
 	margin: 7rem auto;
-	width: 30vw;
-	height: 30vh;
+	width: 30rem;
+	height: 20rem;
 	padding: 2rem;
 	border-radius: 1rem;
 	box-shadow: 0 0 10px 0px #ccc;
 }
-.information-input {
+input{
 	border: 1px solid #ccc;
 	border-radius: 1rem;
 	padding: 12px 12px 12px 38px;
@@ -47,9 +51,18 @@ body {
 	direction: ltr;
 	outline: none;
 	width: 60%;
+	background-position: 10px 10px; 
+	background-size: 25px 25px;
+  	background-repeat: no-repeat;
 }
-.information-input:focus {
+input:focus {
 	border: 1px solid #0097cf;
+}
+.name-input{
+	background-image: url('svg/userProfile.svg');
+}
+.password-input{
+	background-image: url('svg/key.svg');
 }
 .input-box {
 	width: 100%;
@@ -68,7 +81,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
+	height: 14rem;
 	width: 100%;
 }
 form button {
@@ -97,9 +110,6 @@ form h2{
 .register-button{
 	background-color: #c5d6de;
 }
-.register-button a{
-	color: black;
-}
 .errors{
 	display: flex;
 	flex-direction: column;
@@ -108,4 +118,37 @@ form h2{
 	color: red;
 	font-size: 1rem;
 	font-family: vazir-light;
+}
+
+/* responsive styles */
+@media only screen and (max-width: 600px) {
+	.box{
+		width: 80%;
+		padding: 1rem;
+	}
+	input{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 450px) {
+	input{
+		width: 85%;
+		padding: 10px 10px 10px 34px;
+		background-size: 22px 22px;
+		margin-bottom: 20px;
+		margin-top: 5px;
+	}
+	.box{
+		height: 24rem;
+		margin: 3rem auto;
+	}
+	.box form{
+		height: 14rem;
+	}
+	.input-box {
+		flex-direction: column;
+		align-items: start;
+		height: 14rem;
+		width: 100%;
+	}
 }

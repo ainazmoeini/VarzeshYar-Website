@@ -8,6 +8,7 @@
   {% load static %}
   <link rel="icon" href="strength.png">
   <link rel="stylesheet" href="../../static/gym/home.css">
+  <script src="{% static 'gym/myscripts.js' %}"></script>
 </head>
 
 <header class="sticky">
@@ -20,6 +21,17 @@
     </div>
     <div>
       <a class="header_nav profile" href="{% static 'accounts:profile' %}">پروفایل</a>
+    </div>
+  </div>
+  <div class="mobile-header">
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">ورزش‌یار</button>
+      <div id="myDropdown" class="dropdown-content">
+        <a href="home.html">صفحه اصلی</a>
+        <a href="">باشگاه ها</a>
+        <a href="">مربی ها</a>
+        <a href="">پروفایل</a>
+      </div>
     </div>
   </div>
 </header>
@@ -35,7 +47,6 @@
     <div class="logo-design">
       <img src="../../static/gym/svg/work-out.png">
       <div>
-
         <h1>ورزشیار</h1>
         <h5> شعار شعار لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h5>
       </div>
