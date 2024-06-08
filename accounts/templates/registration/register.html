@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" href="../../static/registration/svg/strength.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ثبت‌نام</title>
   {% load static %}
@@ -17,33 +18,27 @@
   </header>
   <main class="menu">
     <div class="box">
-
       <form method="post" action="">
         {% csrf_token %}
         <div class="input-form">
 
-        <div class="input-box">
-          <img src="{% static '..\static\regitration\svg\user.svg' %}" alt="user icon" />
-          <label class="information" for="name">نام کاربری</label>
-          <input class="information-input" type="text" placeholder="username" name="username" id="name" required />
-        </div>
-        <div class="input-box">
-          <img src="{% static '..\static\regitration\svg\sms.svg' %}" alt="user icon" />
-          <label class="information" for="email">ایمیل</label>
-          <input class="information-input" type="email" name="email" id="email" placeholder="example@gmail.com"
-            required />
-        </div>
-        <div class="input-box">
-          <img src="{% static '..\static\regitration\svg\key.svg' %}" alt="user icon" />
-          <label class="information" for="password">رمز عبور</label>
-          <input class="information-input" type="password" name="password" id="password" required />
-        </div>
-        <div class="input-box">
-          <img src="{% static '..\static\regitration\svg\key.svg' %}" alt="user icon" />
-          <label class="information" for="confirm">تایید رمز عبور</label>
-          <input class="information-input" type="password" name="confirm_password" id="confirm_password" required />
-        </div>
-        <button>ثبت‌نام</button>
+          <div class="input-box">
+            <label class="information" for="name">نام کاربری</label>
+            <input class="name-input" type="text" placeholder="username" name="username" id="name" required />
+          </div>
+          <div class="input-box">
+            <label class="information" for="email">ایمیل</label>
+            <input class="email-input" type="email" name="email" id="email" placeholder="example@gmail.com" required />
+          </div>
+          <div class="input-box">
+            <label class="information" for="password">رمز عبور</label>
+            <input class="password-input" type="password" name="password" id="password" required />
+          </div>
+          <div class="input-box">
+            <label class="information" for="confirm">تایید رمز عبور</label>
+            <input class="password-input" type="password" name="confirm_password" id="confirm_password" required />
+          </div>
+          <button>ثبت‌نام</button>
         </div>
         {% if form.errors %}
         <div class="errors">
