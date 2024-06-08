@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My-Profile</title>
+		<link rel="stylesheet" href="my1-profile.css" />
+	</head>
+	<body>
+		<header class="section-head">
+			<div class="container">
+				<h2 class="section-title">ورزش‌یار</h2>
+				<img src="./user.svg" alt="user icon" class="icon" />
+			</div>
+		</header>
+		<main class="section-main">
+			<div class="box">
+				<h2>افزودن اطلاعات شخصی</h2>
+				<form action="">
+					<div class="input-box">
+						<label for="firstname">نام:</label>
+						<img class="input-icon" src="user-id1.svg" alt="user icon">
+						<input type="text" id="firstname" />
+					</div>
+					<div class="input-box">
+						<label for="lastname">نام خانوادگی:</label>
+						<img class="input-icon" src="user-id1.svg" alt="user icon">
+						<input type="text" id="lastname" />
+					</div>
+					<div class="input-box">
+						<label for="phone-number">شماره تلفن:</label>
+						<img class="input-icon" src="phone.svg" alt="phone icon">
+						<input type="tel" id="phone-number" />
+					</div>
+					<div class="input-box">
+						<label for="email">ایمیل:</label>
+						<img class="input-icon" src="email1.svg" alt="">
+						<input type="email" id="email" />
+					</div>
+					<div class="input-box">
+						<label for="password">رمزعبور:</label>
+						<img class="input-icon" src="password.svg" alt="">
+						<input type="password" id="password" />
+					</div>
+					<div class="input-box">
+						<label for="birth-date">تاریخ تولد:</label>
+						<input type="date" id="birth-date" />
+					</div>
+					<div class="input-box">
+						<label>جنسیت:</label>
+						<div class="radio-options">
+							<div class="radio-option">
+								<label for="male">مرد</label>
+								<input type="radio" name="sex" id="male" />
+							</div>
+							<div class="radio-option">
+								<label for="female">زن</label>
+								<input type="radio" name="sex" id="female" />
+							</div>
+						</div>
+					</div>
+					<div class="input-box">
+						<label>وضعیت تاهل:</label>
+						<div class="radio-options">
+							<div class="radio-option">
+								<label for="single">مجرد</label>
+								<input
+									type="radio"
+									name="marriage"
+									id="single"
+								/>
+							</div>
+							<div class="radio-option">
+								<label for="married">متاهل</label>
+								<input
+									type="radio"
+									name="marriage"
+									id="married"
+								/>
+							</div>
+						</div>
+					</div>
+				</form>
+				<button class="btn">مرحله بعد</button>
+			</div>
+		</main>
+	</body>
+</html>
